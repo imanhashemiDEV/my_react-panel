@@ -1,12 +1,15 @@
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
-import Main from "./pages/Main";
+import routes from './routes'
+import { useRoutes } from "react-router-dom";
+
 function App() {
+  let router = useRoutes(routes)
   return (
     <div>
       <Navigation />
       <Header />
-      <Main/>
+      {router}
     </div>
   );
 }

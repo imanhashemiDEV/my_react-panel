@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Navigation() {
   return (
@@ -29,8 +31,8 @@ export default function Navigation() {
           <li>
             <a href="#">کاربران</a>
             <ul>
-              <li><a href="#">ایجاد کاربر</a></li>
-              <li><a href="#">لیست کاربران</a></li>
+              <li><Link to={'./create_user'}>ایجاد کاربر</Link></li>
+              <li><Link to={'./users'}>لیست کاربران</Link></li>
             </ul>
           </li>
         </ul>

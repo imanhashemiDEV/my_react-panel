@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -6,9 +7,9 @@ export default function Header() {
 
 		<div className="header-logo">
         <a href="index.html">
-          <img className="large-logo" src="assets/media/image/logo.png" alt="image"/>
-          <img className="small-logo" src="assets/media/image/logo-sm.png" alt="image"/>
-          <img className="dark-logo" src="assets/media/image/logo-dark.png" alt="image"/>
+          <img className="large-logo" src="./assets/media/image/logo-sm.png" alt="image"/>
+          <img className="small-logo" src="./assets/media/image/logo-sm.png" alt="image"/>
+          <img className="dark-logo" src="./assets/media/image/logo-dark.png" alt="image"/>
         </a>
 		</div>
 
@@ -18,8 +19,8 @@ export default function Header() {
 
 				<nav aria-label="breadcrumb">
 					<ol className="breadcrumb">
-						<li className="breadcrumb-item"><a href="#">داشبورد</a></li>
-						<li className="breadcrumb-item active" aria-current="page"> لیست  </li>
+						<li className="breadcrumb-item"><Link to={'./'}>داشبورد</Link></li>
+						{/* <li className="breadcrumb-item active" aria-current="page"> لیست  </li> */}
 					</ol>
 				</nav>
 
